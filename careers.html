@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers - Chengannur Nidhi Limited</title>
+  <link rel="icon" type="image/png" href="./images/logo.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="content-wrapper">
+    <nav class="navbar navbar-expand-md navbar-dark custom-navbar fixed-top">
+      <div class="container-fluid px-4">
+        <!-- Logo and Brand -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="images/logo.png" alt="Chengannur Nidhi Logo" width="45" height="45"
+            class="d-inline-block align-text-top" style="object-fit: contain;">
+          <h2 class="mb-0 brand-text">Chengannur Nidhi</h2>
+        </a>
+
+        <!-- Bootstrap Hamburger Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <h1 class="section-title">Careers</h1>
+
+      <p style="text-align:center; color: #ffffff; margin-bottom: 30px; font-size: 1.1rem;">
+        Join our growing team and build a fulfilling career with Chengannur Nidhi Limited.<br>We are always looking for
+        passionate and talented individuals.
+      </p>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="glass-panel p-4 p-md-5">
+              <h3 class="text-warning mb-4 text-center fw-bold">Submit Your Application</h3>
+              <form class="row g-4">
+                <div class="col-md-12">
+                  <input type="text" class="form-control form-control-lg   border-secondary placeholder-light"
+                    placeholder="Full Name" required style="border-radius: 10px;">
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control form-control-lg   border-secondary placeholder-light"
+                    placeholder="Email Address" required style="border-radius: 10px;">
+                </div>
+                <div class="col-md-6">
+                  <input type="tel" class="form-control form-control-lg   border-secondary placeholder-light"
+                    placeholder="Phone Number" required style="border-radius: 10px;">
+                </div>
+                <div class="col-12">
+                  <select class="form-select form-select-lg   border-secondary" required style="border-radius: 10px;">
+                    <option value="" disabled selected class="text-dark">Select Position</option>
+                    <option value="Branch Manager" class="text-dark">Branch Manager</option>
+                    <option value="Gold Appraiser" class="text-dark">Gold Appraiser</option>
+                    <option value="Office Staff" class="text-dark">Office Staff</option>
+                    <option value="Marketing Executive" class="text-dark">Marketing Executive</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control  border-secondary placeholder-light" rows="4"
+                    placeholder="Tell us about yourself and why you're a good fit..." required
+                    style="border-radius: 10px;"></textarea>
+                </div>
+                <div class="col-12 text-center mt-4">
+                  <button class="btn w-100 py-3"
+                    style="border-radius: 10px; font-size: 1.1rem; font-weight: 600;">Submit Application</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-light py-3 mt-2" style="background: linear-gradient(180deg, rgba(9, 1, 53, 1) 0%, rgba(5, 1, 30, 1) 100%); border-top: 3px solid
+      #ffd700; position: relative;">
+      <div class="container" style="padding-top: 5px;">
+        <div class="row gy-3">
+          <!-- Column 1: About & Address -->
+          <div class="col-lg-4 col-md-6 pe-lg-5">
+            <div class="text-warning mb-3 d-flex align-items-center gap-3">
+              <img src="images/logo.png" alt="Logo"
+                style="width: 40px; height: 40px; background-color: #fff; border-radius: 50%; object-fit: contain; padding: 3px; border: 2px solid #ffd700;">
+              <div>
+                <h4 class="mb-0" style="color: #ffd700; letter-spacing: 1px; font-size: 18px;">ChengannurNidhi Limited
+                </h4>
+                <p class="mb-0 text-light opacity-75" style="font-size: 12px;">CIN: U60900KL2022PTC123456</p>
+              </div>
+            </div>
+
+            <p class="mb-3 text-light opacity-75" style="line-height: 1.4; font-size: 12px;">Empowering our community
+              with trusted
+              financial services, premium gold loans, and secure, high-yield deposit schemes.</p>
+            <address class="text-light d-flex gap-2 mb-0" style="font-size: 13px; padding-top: 5px;">
+              <img src="./images/point.png" alt=""
+                style="width:25px; height:25px; padding: 5px; margin-top: 4px; background-color: rgb(255, 255, 255) ; border-radius: 50%;">
+              <span>
+                <strong class="text-white">Head Office</strong> - Govt. Hospital JN,<br>
+                M.C Road, Chengannur, Kerala - 689121
+              </span>
+            </address>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div class="col-lg-4 col-md-6">
+            <h4 class="text-warning mb-3 position-relative pb-1" style="display: inline-block; font-size: 16px;">
+              Quick Links
+              <span
+                style="position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background-color: #ffd700;"></span>
+            </h4>
+            <ul class="list-unstyled d-flex flex-column gap-2 mt-2 mb-0">
+              <li><a href="about.html"
+                  class="text-light text-decoration-none footer-link d-flex align-items-center gap-2"
+                  style="font-size: 14px;"><span style="color: #ffd700; font-size: 12px;">❯</span> About Us</a></li>
+              <li><a href="services.html"
+                  class="text-light text-decoration-none footer-link d-flex align-items-center gap-2"
+                  style="font-size: 14px;"><span style="color: #ffd700; font-size: 12px;">❯</span> Our Services</a></li>
+              <li><a href="branches.html"
+                  class="text-light text-decoration-none footer-link d-flex align-items-center gap-2"
+                  style="font-size: 14px;"><span style="color: #ffd700; font-size: 12px;">❯</span> Locate a Branch</a>
+              </li>
+              <li><a href="careers.html"
+                  class="text-light text-decoration-none footer-link d-flex align-items-center gap-2"
+                  style="font-size: 14px;"><span style="color: #ffd700; font-size: 12px;">❯</span> Careers</a></li>
+              <li><a href="contact.html"
+                  class="text-light text-decoration-none footer-link d-flex align-items-center gap-2"
+                  style="font-size: 14px;"><span style="color: #ffd700; font-size: 12px;">❯</span> Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Contact Info & Socials -->
+          <div class="col-lg-4 col-md-12">
+            <h4 class="text-warning mb-3 position-relative pb-1" style="display: inline-block; font-size: 16px;">
+              Contact & Connect
+              <span
+                style="position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background-color: #ffd700;"></span>
+            </h4>
+            <div class="d-flex flex-column gap-2 mb-3 text-light mt-2">
+              <div class="d-flex align-items-center gap-2">
+                <div
+                  style="background: rgb(250, 250, 250); padding: 8px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                  <img src="./images/tfn.png" alt="" style="width:16px;">
+                </div>
+                <div>
+                  <div class="opacity-75" style="font-size: 0.70rem;">Give us a call</div>
+                  <div style="font-size: 14px;">+91 8943359110 <span class="mx-1 opacity-50">|</span> +91 8943359116
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center gap-2 mt-1">
+                <div
+                  style="background: rgb(250, 250, 250); padding: 8px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                  <img src="./images/email.png" alt="" style="width:16px;">
+                </div>
+                <div>
+                  <div class="opacity-75" style="font-size: 0.70rem;">Send us a message</div>
+                  <div style="word-break: break-all; font-size: 13px;">admin@chengannurnidhilimited.in
+                    <br>chengannurnidhi2016@gmail.com
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex gap-2 mt-3">
+              <a href="#"
+                class="d-flex align-items-center justify-content-center text-decoration-none footer-social fw-bold"
+                style="width: 35px; height: 35px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 215, 0, 0.3); border-radius: 50%; color: #ffd700; font-size: 0.9rem;">fb</a>
+              <a href="#"
+                class="d-flex align-items-center justify-content-center text-decoration-none footer-social fw-bold"
+                style="width: 35px; height: 35px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 215, 0, 0.3); border-radius: 50%; color: #ffd700; font-size: 0.9rem;">in</a>
+              <a href="#"
+                class="d-flex align-items-center justify-content-center text-decoration-none footer-social fw-bold"
+                style="width: 35px; height: 35px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 215, 0, 0.3); border-radius: 50%; color: #ffd700; font-size: 0.9rem;">𝕏</a>
+              <a href="#"
+                class="d-flex align-items-center justify-content-center text-decoration-none footer-social fw-bold"
+                style="width: 35px; height: 35px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 215, 0, 0.3); border-radius: 50%; color: #ffd700; font-size: 0.9rem;">ig</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4 pt-3 border-top text-center" style="border-color: rgba(255, 215, 0, 0.2) !important;">
+          <div class="col-md-6 text-md-start text-light opacity-75 mb-2 mb-md-0">
+            <small style="font-size: 12px;">© 2026 Chengannur Nidhi Limited. All rights reserved.</small>
+          </div>
+          <div class="col-md-6 text-md-end text-light opacity-75">
+            <small style="font-size: 12px;">
+              <a href="#" class="text-light text-decoration-none me-3 hover-warning"
+                style="transition: color 0.3s ease;">Privacy Policy</a>
+              <a href="#" class="text-light text-decoration-none hover-warning"
+                style="transition: color 0.3s ease;">Terms & Conditions</a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/navbar.js" defer></script>
+</body>
+
+</html>

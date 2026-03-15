@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chengannur Nidhi Limited</title>
+  <link rel="icon" type="image/png" href="./images/logo.png">
+  <!-- Three.js CDN for 3D graphics -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="content-wrapper">
+    <nav class="navbar navbar-expand-md navbar-dark custom-navbar fixed-top">
+      <div class="container-fluid px-4">
+        <!-- Logo and Brand -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="./">
+          <img src="images/logo.png" class="d-inline-block align-text-top" style="object-fit: contain;">
+          <h2 class="mb-0 brand-text">CHENGANNUR NIDHI</h2>
+        </a>
+
+        <!-- Bootstrap Hamburger Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item"><a class="nav-link" href="./">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="glass-panel">
+        <h1>Your Trusted Partner for <br><span class="scroll-text"
+            style="color: #ffd700; font-weight:bold; font-size: 50px;">Gold
+            Loans</span>
+        </h1>
+        <p>Secure, transparent, and premium financial services for our valued members. Experience the next generation of
+          banking.</p>
+        <a href="services.html" class="btn">Explore Services</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="glass-panel" style="margin: 0 auto; text-align: center;">
+        <h2 class="section-title">Welcome to Chengannur Nidhi Limited</h2>
+        <p style="font-size: 1.2rem; color: rgb(255, 255, 255); margin-bottom: 30px;">
+          Chengannur Nidhi Limited is a trusted community-based financial institution
+          dedicated to promoting savings and providing financial assistance to members.
+          Our company operates on the principle of mutual benefit and financial discipline,
+          all within a secure framework.
+        </p>
+        <a href="about.html" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- OUR SUCCESS -->
+    <section class="section" style="padding-top: 0;">
+      <h2 class="section-title">OUR SUCCESS</h2>
+      <div class="container">
+        <div class="row text-center g-4 justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="glass-panel w-100 p-4 h-100 d-flex flex-column justify-content-center align-items-center"
+              style="background-color: #050130; border-radius: 10px; box-shadow: 0 0 5px #ffd700;">
+              <img src="images/branches_icon.png" alt="Experience"
+                style="width: 90px; height: 90px; object-fit: cover; border-radius: 50%; border: 3px solid #ffd700; margin-bottom: 15px;">
+              <h2 class="display-4 fw-bold text-warning mb-2">10+</h2>
+              <h4 class="text-light text-uppercase tracking-wide mb-3">Years of Experience</h4>
+              <p class=" mb-0" style="font-size: 0.95rem; color: #ffd700;">A decade of trust and
+                excellence in financial services.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="glass-panel w-100 p-4 h-100 d-flex flex-column justify-content-center align-items-center"
+              style="background-color: #050130; border-radius: 10px; box-shadow: 0 0 5px #ffd700;">
+              <img src="images/members_icon.png" alt="Members"
+                style="width: 90px; height: 90px; object-fit: cover; border-radius: 50%; border: 3px solid #ffd700; margin-bottom: 15px;">
+              <h2 class="display-4 fw-bold text-warning mb-2">35,000+</h2>
+              <h4 class="text-light text-uppercase tracking-wide mb-3">Happy Members</h4>
+              <p class="mb-0" style="font-size: 0.95rem; color: #ffd700;">A growing community relying on our secure
+                deposit and loan schemes.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="glass-panel w-100 p-4 h-100 d-flex flex-column justify-content-center align-items-center"
+              style="background-color: #050130; border-radius: 10px; box-shadow: 0 0 5px #ffd700;">
+              <img src="images/experience_icon.png" alt="Branches"
+                style="width: 90px; height: 90px; object-fit: cover; border-radius: 50%; border: 3px solid #ffd700; margin-bottom: 15px;">
+              <h2 class="display-4 fw-bold text-warning mb-2">30+</h2>
+              <h4 class="text-light text-uppercase tracking-wide mb-3">Branches</h4>
+              <p class=" mb-0" style="font-size: 0.95rem; color: #ffd700;">Widespread network across the state for your
+                convenience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Chengannur Nidhi Section -->
+    <section class="section pt-2 pb-5">
+      <h2 class="section-title mb-5">Why Chengannur Nidhi?</h2>
+      <div class="container">
+        <div class="row g-4 justify-content-center"
+          style="background-color: rgba(9, 1, 54, 0.925); border-radius: 10px; box-shadow: 0 0 5px #ffd700; padding: 50px;">
+
+          <div class="col-lg-6 col-md-12">
+            <div class="glass-panel w-100 h-100 p-4 d-flex align-items-start gap-3">
+              <span class="fs-1 text-warning">*</span>
+              <div>
+                <h5 class="mb-2">Comprehensive Accessibility</h5>
+                <p class="mb-0">Unimpeded access to a diverse portfolio of sophisticated savings,
+                  investments, deposit schemes, and comprehensive financial services.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+            <div class="glass-panel w-100 h-100 p-4 d-flex align-items-start gap-3">
+              <span class="fs-1 text-warning">*</span>
+              <div>
+                <h5 class="mb-2">Dedicated Clientele Relations</h5>
+                <p class="mb-0">A steadfast team of professionals dedicated to cultivating enduring
+                  customer relationships and ensuring absolute satisfaction.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+            <div class="glass-panel w-100 h-100 p-4 d-flex align-items-start gap-3">
+              <span class="fs-1 text-warning">*</span>
+              <div>
+                <h5 class="mb-2">Unparalleled Service Excellence</h5>
+                <p class="mb-0">Unwavering commitment to furnishing our clientele with the highest
+                  echelon of reliable service alongside innovative financial products.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+            <div class="glass-panel w-100 h-100 p-4 d-flex align-items-start gap-3">
+              <span class="fs-1 text-warning">*</span>
+              <div>
+                <h5 class="mb-2">Impeccable Reputation</h5>
+                <p class="mb-0">A robust and sterling reputation built upon a foundation of operational
+                  efficiency, effectiveness, and resolute dedication.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+            <div class="glass-panel w-100 h-100 p-4 d-flex align-items-start gap-3">
+              <span class="fs-1 text-warning">*</span>
+              <div>
+                <h5 class="mb-2">Consummate Professionalism</h5>
+                <p class="mb-0">Exhibiting the utmost professionalism and integrity across every facet of
+                  our interactions with members and clients.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+            <div class="glass-panel w-100 h-100 p-4 d-flex align-items-start gap-3">
+              <span class="fs-1 text-warning">*</span>
+              <div>
+                <h5 class="mb-2">Premium Market Offerings</h5>
+                <p class="mb-0">A relentless pursuit to ensure you consistently receive nothing short of
+                  the finest and most advantageous market offerings available.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+            <div class="glass-panel w-100 h-100 p-4 d-flex align-items-start gap-3">
+              <span class="fs-1 text-warning">*</span>
+              <div>
+                <h5 class="mb-2">Guaranteed Transparency</h5>
+                <p class="mb-0">An ironclad guarantee fostering absolute trust through unwavering
+                  fairness and crystal-clear transparency in all our dealings.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+            <div class="glass-panel w-100 h-100 p-4 d-flex align-items-start gap-3">
+              <span class="fs-1 text-warning">*</span>
+              <div>
+                <h5 class="mb-2">Unyielding Ethical Standards</h5>
+                <p class="mb-0">A strict adherence to moral rectitude, completely devoid of any unethical
+                  financial practices or hidden caveats.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+            <div class="glass-panel w-100 h-100 p-4 d-flex align-items-start gap-3">
+              <span class="fs-1 text-warning">*</span>
+              <div>
+                <h5 class="mb-2">Enduring Institutional Legacy</h5>
+                <p class="mb-0">A long, prestigious tradition characterized by financial discipline,
+                  formidable strength, and profound goodwill within our communities.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+            <div class="glass-panel w-100 h-100 p-4 d-flex align-items-start gap-3">
+              <span class="fs-1 text-warning">*</span>
+              <div>
+                <h5 class="mb-2">Bespoke Financial Strategies</h5>
+                <p class="mb-0">Intrinsically tailored financial solutions meticulously designed to cater
+                  to the unique economic aspirations and requirements of our diverse membership.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section pt-2 pb-5">
+      <h2 class="section-title mb-5">Customer's say</h2>
+      <div class="container" style="background-color: #050130; border-radius: 20px; box-shadow: 0 0 5px #ffd700;">
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner glass-panel mx-auto" style="max-width: 800px; padding: 40px 60px;">
+
+            <div class="carousel-item active text-center">
+              <i class="text-warning fs-1 mb-3">"</i>
+              <p class="fs-5 text-light fst-italic mb-4">Chengannur Nidhi has been a pillar of support for my family.
+                Their gold loan process was incredibly fast, completely transparent, and the staff made us feel like
+                family. Highly recommended!</p>
+              <h5 class="text-warning mb-0">- Rajesh Kumar</h5>
+              <small class="text-secondary">Member since 2019</small>
+            </div>
+
+            <div class="carousel-item text-center">
+              <i class="text-warning fs-1 mb-3">"</i>
+              <p class="fs-5 text-light fst-italic mb-4">I have been using their fixed deposit schemes for years. The
+                returns are excellent and I sleep soundly knowing my savings are secure with a community-trusted
+                institution.</p>
+              <h5 class="text-warning mb-0">- Anitha Nair</h5>
+              <small class="text-secondary">Member since 2021</small>
+            </div>
+
+            <div class="carousel-item text-center">
+              <i class="text-warning fs-1 mb-3">"</i>
+              <p class="fs-5 text-light fst-italic mb-4">What sets Chengannur Nidhi apart is their customer service.
+                Whenever I visit a branch, I am greeted with a smile and my transactions are handled efficiently.</p>
+              <h5 class="text-warning mb-0">- Mohammed Tariq</h5>
+              <small class="text-secondary">Member since 2023</small>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-light py-3 mt-2" style="background: linear-gradient(180deg, rgba(9, 1, 53, 1) 0%, rgba(5, 1, 30, 1) 100%); border-top: 3px solid
+      #ffd700; position: relative;">
+      <div class="container" style="padding-top: 5px;">
+        <div class="row gy-3">
+          <!-- Column 1: About & Address -->
+          <div class="col-lg-4 col-md-6 pe-lg-5">
+            <div class="text-warning mb-3 d-flex align-items-center gap-3">
+              <img src="images/logo.png" alt="Logo"
+                style="width: 40px; height: 40px; background-color: #fff; border-radius: 50%; object-fit: contain; padding: 3px; border: 2px solid #ffd700;">
+              <div>
+                <h4 class="mb-0" style="color: #ffd700; letter-spacing: 1px; font-size: 18px;">ChengannurNidhi Limited
+                </h4>
+                <p class="mb-0 text-light opacity-75" style="font-size: 12px;">CIN: U60900KL2022PTC123456</p>
+              </div>
+            </div>
+
+            <p class="mb-3 text-light opacity-75" style="line-height: 1.4; font-size: 12px;">Empowering our community
+              with trusted
+              financial services, premium gold loans, and secure, high-yield deposit schemes.</p>
+            <address class="text-light d-flex gap-2 mb-0" style="font-size: 13px; padding-top: 5px;">
+              <img src="./images/point.png" alt=""
+                style="width:25px; height:25px; padding: 5px; margin-top: 4px; background-color: rgb(255, 255, 255) ; border-radius: 50%;">
+              <span>
+                <strong class="text-white">Head Office</strong> - Govt. Hospital JN,<br>
+                M.C Road, Chengannur, Kerala - 689121
+              </span>
+            </address>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div class="col-lg-4 col-md-6">
+            <h4 class="text-warning mb-3 position-relative pb-1" style="display: inline-block; font-size: 16px;">
+              Quick Links
+              <span
+                style="position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background-color: #ffd700;"></span>
+            </h4>
+            <ul class="list-unstyled d-flex flex-column gap-2 mt-2 mb-0">
+              <li><a href="about.html"
+                  class="text-light text-decoration-none footer-link d-flex align-items-center gap-2"
+                  style="font-size: 14px;"><span style="color: #ffd700; font-size: 12px;">❯</span> About Us</a></li>
+              <li><a href="services.html"
+                  class="text-light text-decoration-none footer-link d-flex align-items-center gap-2"
+                  style="font-size: 14px;"><span style="color: #ffd700; font-size: 12px;">❯</span> Our Services</a></li>
+              <li><a href="branches.html"
+                  class="text-light text-decoration-none footer-link d-flex align-items-center gap-2"
+                  style="font-size: 14px;"><span style="color: #ffd700; font-size: 12px;">❯</span> Locate a Branch</a>
+              </li>
+              <li><a href="careers.html"
+                  class="text-light text-decoration-none footer-link d-flex align-items-center gap-2"
+                  style="font-size: 14px;"><span style="color: #ffd700; font-size: 12px;">❯</span> Careers</a></li>
+              <li><a href="contact.html"
+                  class="text-light text-decoration-none footer-link d-flex align-items-center gap-2"
+                  style="font-size: 14px;"><span style="color: #ffd700; font-size: 12px;">❯</span> Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Contact Info & Socials -->
+          <div class="col-lg-4 col-md-12">
+            <h4 class="text-warning mb-3 position-relative pb-1" style="display: inline-block; font-size: 16px;">
+              Contact & Connect
+              <span
+                style="position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background-color: #ffd700;"></span>
+            </h4>
+            <div class="d-flex flex-column gap-2 mb-3 text-light mt-2">
+              <div class="d-flex align-items-center gap-2">
+                <div
+                  style="background: rgb(250, 250, 250); padding: 8px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                  <img src="./images/tfn.png" alt="" style="width:16px;">
+                </div>
+                <div>
+                  <div class="opacity-75" style="font-size: 0.70rem;">Give us a call</div>
+                  <div style="font-size: 14px;">+91 8943359110 <span class="mx-1 opacity-50">|</span> +91 8943359116
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center gap-2 mt-1">
+                <div
+                  style="background: rgb(250, 250, 250); padding: 8px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                  <img src="./images/email.png" alt="" style="width:16px;">
+                </div>
+                <div>
+                  <div class="opacity-75" style="font-size: 0.70rem;">Send us a message</div>
+                  <div style="word-break: break-all; font-size: 13px;">admin@chengannurnidhilimited.in
+                    <br>chengannurnidhi2016@gmail.com
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex gap-2 mt-3">
+              <a href="#"
+                class="d-flex align-items-center justify-content-center text-decoration-none footer-social fw-bold"
+                style="width: 35px; height: 35px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 215, 0, 0.3); border-radius: 50%; color: #ffd700; font-size: 0.9rem;">fb</a>
+              <a href="#"
+                class="d-flex align-items-center justify-content-center text-decoration-none footer-social fw-bold"
+                style="width: 35px; height: 35px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 215, 0, 0.3); border-radius: 50%; color: #ffd700; font-size: 0.9rem;">in</a>
+              <a href="#"
+                class="d-flex align-items-center justify-content-center text-decoration-none footer-social fw-bold"
+                style="width: 35px; height: 35px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 215, 0, 0.3); border-radius: 50%; color: #ffd700; font-size: 0.9rem;">𝕏</a>
+              <a href="#"
+                class="d-flex align-items-center justify-content-center text-decoration-none footer-social fw-bold"
+                style="width: 35px; height: 35px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 215, 0, 0.3); border-radius: 50%; color: #ffd700; font-size: 0.9rem;">ig</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4 pt-3 border-top text-center" style="border-color: rgba(255, 215, 0, 0.2) !important;">
+          <div class="col-md-6 text-md-start text-light opacity-75 mb-2 mb-md-0">
+            <small style="font-size: 12px;">© 2026 Chengannur Nidhi Limited. All rights reserved.</small>
+          </div>
+          <div class="col-md-6 text-md-end text-light opacity-75">
+            <small style="font-size: 12px;">
+              <a href="#" class="text-light text-decoration-none me-3 hover-warning"
+                style="transition: color 0.3s ease;">Privacy Policy</a>
+              <a href="#" class="text-light text-decoration-none hover-warning"
+                style="transition: color 0.3s ease;">Terms & Conditions</a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./js/script.js" defer></script>
+  <script src="./js/navbar.js"></script>
+</body>
+
+</html>
