@@ -93,7 +93,7 @@ body {
 
 .custom-navbar .nav-link:hover,
 .custom-navbar .nav-link.active {
-  color: var(--primary) !important;
+  color: #ffb300 !important;
   text-shadow: 0 0 8px rgba(192, 192, 192, 0.8);
 }
 
